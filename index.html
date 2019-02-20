@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="J.R Ibanez Romany" />
+    <meta name="description" content="" />
+    <title>
+      Alturas de Altamesa
+    </title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body id="page-top" class="bg-light">
+    <nav class="navbar fixed-top navbar-dark bg-secondary navbar-expand-sm">
+      <div class="container-fluid">
+        <a href="#page-top" class="navbar-brand">
+          <img src="./assets/img/logo.png" alt="alturas de altamesa logo" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-target="#nav-res"
+          data-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-res">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                Contáctanos
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" p-3>
+              <h1 class="display-4">
+                Comunidad
+              </h1>
+              <p class="lead">
+                Una comunidad vibrante y moderna en el mismo corazón del área
+                metropolitana y con un precio verdaderamente accesible para las
+                familias que están en busca de un hogar seguro. Alturas de
+                Altamesa es un complejo residencial de apartamentos tipo
+                walk-up, con seguridad 24 horas, localizado a sólo minutos del
+                Hospital Metropolitano, Centro Médico, el Hospital de Veteranos
+                y en la colindancia con Guaynabo. Olvide el tapón, ahora si
+                puede vivir en un apartamento nuevo, con una localización
+                inmejorable y al precio que usted puede pagar.
+              </p>
+              <button
+                type="button"
+                data-target="#modal-info"
+                data-toggle="modal"
+                class="btn btn-lg btn-secondary"
+              >
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5">
+              <form method="post">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">
+                      Formulario de Contacto
+                    </h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="name">
+                        Tu nombre
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="2"
+                        maxlength="50"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">
+                        Teléfono (opcional)
+                      </label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        minlength="10"
+                        maxlength="10"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="msg">
+                        Mensaje
+                      </label>
+                      <textarea
+                        rows="5"
+                        class="form-control"
+                        required
+                        id="msg"
+                        name="msg"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-success btn-lg m-3">
+                      Enviar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-7">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">
+                    Dirección y Mapa
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div id="map-block"></div>
+                </div>
+                <div class="card-footer">
+                  <p class="card-text">
+                    Dirección: Portales de Altamesa - 1430 Calle San
+                    AlfonsoMonacillo Urbano, San Juan, PR, 00921
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade" id="modal-info">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">
+              Informacion
+            </h2>
+            <p>
+              Todo lo que necesitas saber acerca de nuestros apartamentos!
+            </p>
+          </div>
+          <div class="modal-body">
+            <h3 class="font-weight-bold">
+              Todos nuestros apartamentos cuentan con:
+            </h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Todos con 3 habitaciones, 2 baños, 2 estacionamientos más área
+                separada para laundry.
+              </li>
+              <li class="list-group-item">
+                Cocinas estilo europeo con exquisitos topes en cuarzo blanco.
+              </li>
+              <li class="list-group-item">
+                Ventanas y puertas de seguridad.
+              </li>
+              <li class="list-group-item">
+                Elegantes puertas de metal y cristal “frosted” en todo el
+                apartamento.
+              </li>
+              <li class="list-group-item">
+                Modernos baños con muebles en pvc y elegantes sistema de duchas.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-link" data-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
