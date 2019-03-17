@@ -7,15 +7,19 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #d8d8d8;
 }
 
-.navbar img {
-  height: 2rem;
+.btn-success {
+  background-color: #023c41 !important;
 }
 
-section {
-  margin-top: 6.25rem;
-  padding: 6rem 0;
+#main-nav {
+  background-color: #4d4e4c;
+}
+
+#main-nav img {
+  height: 2.5rem;
 }
 
 #welcome {
@@ -74,5 +78,5 @@ section {
 }
 
 footer {
-  background-color: darkgreen;
+  background-color: #777776;
 }

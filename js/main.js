@@ -15,24 +15,29 @@ $(document).ready(() => {
     }
   }
 
-  // Smooth Scrolling
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (
-      location.pathname.replace(/^\//, '') ==
-        this.pathname.replace(/^\//, '') &&
-      location.hostname == this.hostname
-    ) {
-      let target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate(
-          {
-            scrollTop: target.offset().top
-          },
-          1000
-        );
-        return false;
-      }
+  $('body').scrollspy({ target: '#main-nav' });
+
+  // Add smooth scrolling
+  $('#main-nav a').on('click', function(e) {
+    // Check for a hash value
+    if (this.hash !== '') {
+      // Prevent default behavior
+      e.preventDefault();
+
+      // Store hash
+      const hash = this.hash;
+
+      // Animate smooth scroll
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        900,
+        function() {
+          // Add hash to URL after scroll
+          window.location.hash = hash;
+        }
+      );
     }
   });
 });
