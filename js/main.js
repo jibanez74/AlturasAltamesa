@@ -1,4 +1,6 @@
 $(document).ready(() => {
+  ajaxForm();
+
   for (let i = 1; i < 12; i++) {
     if (i < 2) {
       $('#slides').append(`
@@ -41,3 +43,21 @@ $(document).ready(() => {
     }
   });
 });
+
+function ajaxForm() {
+  $('#myForm').submit(e => {
+    e.preventDefault();
+
+    const $form = $(this);
+    $.post($form.attr('action'), $form.serialize()).then(() => {
+      $('#myForm').fadeOut('slow');
+      $('#success-card').fadeIn('slow');
+      $('#name, email, phone, msg').val('');
+
+      setTimeout(() => {
+        $('#success-card').fadeOut('slow');
+        $('#myForm').fadeIn('slow');
+      }, 6000);
+    });
+  });
+}
