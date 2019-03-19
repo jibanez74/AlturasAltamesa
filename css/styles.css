@@ -57,25 +57,10 @@ body {
   }
 }
 
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
 @media (min-width: 48rem) {
   .carousel-item {
-    height: 48rem;
+    height: 56rem;
   }
-
-  .carousel-item img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-#success-card {
-  background-color: #7a9fa0;
-  display: none;
 }
 
 #bot-field {

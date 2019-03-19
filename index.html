@@ -22,8 +22,18 @@
     <title>
       Alturas de Altamesa
     </title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body
@@ -157,7 +167,7 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10 mx-auto">
               <div id="mySlides" data-ride="carousel" class="carousel slide">
                 <div id="slides" class="carousel-inner"></div>
               </div>
@@ -288,10 +298,19 @@
                     src="assets/img/garden.jpg"
                     alt="plano apartamento garden"
                   />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">
                       Apartamento Garden
                     </h4>
+                    <a
+                      data-lightbox="gallery"
+                      data-title="Apartamento Garden"
+                      href="assets/img/garden.jpg"
+                      role="button"
+                      class="btn btn-info"
+                    >
+                      Ver Plano
+                    </a>
                   </div>
                 </div>
 
@@ -301,10 +320,19 @@
                     src="assets/img/typical.jpg"
                     alt="plano apartamento típico"
                   />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">
                       Apartamento Típico
                     </h4>
+                    <a
+                      data-lightbox="gallery"
+                      data-title="Apartamento Típico"
+                      href="assets/img/typical.jpg"
+                      role="button"
+                      class="btn btn-info"
+                    >
+                      Ver Plano
+                    </a>
                   </div>
                 </div>
 
@@ -314,10 +342,19 @@
                     src="assets/img/ph.jpg"
                     alt="plano apartamento PH"
                   />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">
                       Apartamento PH, 1er nivel
                     </h4>
+                    <a
+                      data-lightbox="gallery"
+                      data-title="Apartamento PH"
+                      href="assets/img/ph.jpg"
+                      role="button"
+                      class="btn btn-info"
+                    >
+                      Ver Plano
+                    </a>
                   </div>
                 </div>
 
@@ -327,10 +364,19 @@
                     src="assets/img/ph2.jpg"
                     alt="plano apartamento ph"
                   />
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">
                       Apartamento PH, 2ndo nivel
                     </h4>
+                    <a
+                      data-lightbox="gallery"
+                      data-title="Apartamento PH, terraza"
+                      href="assets/img/ph2.jpg"
+                      role="button"
+                      class="btn btn-info"
+                    >
+                      Ver Plano
+                    </a>
                   </div>
                 </div>
               </div>
@@ -339,7 +385,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section class="my-4 my-lg-5" id="contact">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6">
@@ -352,6 +398,9 @@
                   </div>
                   <div class="card-body p-3">
                     <div class="form-group">
+                      <label for="name">
+                        Nombre
+                      </label>
                       <input
                         type="text"
                         class="form-control"
@@ -360,22 +409,23 @@
                         required
                         minlength="2"
                         maxlength="50"
-                        placeholder="Su nombre"
                       />
                     </div>
                     <div class="form-group">
+                      <label for="email">
+                        Email
+                      </label>
                       <input
                         type="email"
                         class="form-control"
                         id="email"
                         name="email"
                         required
-                        placeholder="Su email"
                       />
                     </div>
                     <div class="form-group">
                       <label for="phone">
-                        Teléfono (opcional)
+                        Teléfono
                       </label>
                       <input
                         type="number"
@@ -384,7 +434,6 @@
                         name="phone"
                         minlength="10"
                         maxlength="10"
-                        placeholder="Teléfono"
                         aria-describedby="phone-hint"
                       />
                       <small id="phone-hint" class="text-muted form-text">
@@ -500,9 +549,14 @@
       </div>
     </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

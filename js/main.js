@@ -3,13 +3,13 @@ $(document).ready(() => {
     if (i < 2) {
       $('#slides').append(`
         <div class="carousel-item active">
-          <img src="assets/img/item1.jpg" alt="imagen 1 en carrusel">
+          <img class="d-block w-100" src="assets/img/item1.jpg" alt="imagen 1 en carrusel">
         </div>
       `);
     } else {
       $('#slides').append(`
       <div class="carousel-item">
-      <img src="assets/img/item${i}.jpg" alt="imagen ${i} en carrusel">
+      <img class="d-block w-100" src="assets/img/item${i}.jpg" alt="imagen ${i} en carrusel">
     </div>
       `);
     }
