@@ -78,6 +78,10 @@ body {
   display: none;
 }
 
+#bot-field {
+  display: none;
+}
+
 footer {
   background-color: #777776;
 }
